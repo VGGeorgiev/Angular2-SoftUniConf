@@ -1,0 +1,11 @@
+<div>
+	<h1>{{title}}</h1>
+	<ul>
+		<li *foreach="#dude in dudes">
+			{{dude.name}}
+			<button (click)="removeDude(dude)">X</button>
+		</li>
+	</ul>
+
+	<input type="text" #dude (keyup)="addDude($event, dude)" />
+</div>
