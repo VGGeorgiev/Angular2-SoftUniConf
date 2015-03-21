@@ -4,6 +4,9 @@ import { SoftUniStore } from 'services/softUniStore';
 
 @Component({
 	selector: 'my-app',
+	// componentServices: [
+	//     bind(SoftUniStore).toClass(ConfSoftUniStore)
+	// ]
 	componentServices: [
 		SoftUniStore
 	]

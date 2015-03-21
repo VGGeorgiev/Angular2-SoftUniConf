@@ -22,4 +22,4 @@ app.factory('SoftUniStore', function () {
 		removeDude: removeDude,
 		list: list
 	}
-})
+});
