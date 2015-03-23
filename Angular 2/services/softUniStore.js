@@ -16,6 +16,6 @@ export class SoftUniStore {
 
 	removeDude(dude) {
 		var index = this.list.indexOf(dude);
-		this.list.splice(index, 1)[0];
+		this.list.splice(index, 1);
 	}
 }
