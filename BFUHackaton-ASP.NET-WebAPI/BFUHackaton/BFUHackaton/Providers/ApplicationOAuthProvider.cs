@@ -13,6 +13,8 @@ using BFUHackaton.Models;
 
 namespace BFUHackaton.Providers
 {
+    using Data.Models;
+
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {
         private readonly string _publicClientId;

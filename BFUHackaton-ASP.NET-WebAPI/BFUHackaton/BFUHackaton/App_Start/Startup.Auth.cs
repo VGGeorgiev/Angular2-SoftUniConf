@@ -13,6 +13,8 @@ using BFUHackaton.Models;
 
 namespace BFUHackaton
 {
+    using Data;
+
     public partial class Startup
     {
         public static OAuthAuthorizationServerOptions OAuthOptions { get; private set; }
