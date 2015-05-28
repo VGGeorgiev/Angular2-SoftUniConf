@@ -1,0 +1,21 @@
+1. Distributed Apps and SOA
+	Different application architectures
+	Show more schemas with a little bit text
+2. RESTful Web Services
+	What is REST?
+3. ASP.NET Web API
+	What is
+	Features
+	WebAPI 2 ?
+	Routing
+	Controllers/Actions
+	Model binding
+4. How to consume services
+5. Development tools
+
+Demo
+	1. Web services with 1-2 tables and crud operations
+	2. Consume services
+		with JavaScript
+		with C# (Phone, App)
+	3. Developer tools
