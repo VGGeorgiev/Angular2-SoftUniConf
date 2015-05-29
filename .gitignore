@@ -2,3 +2,5 @@ node_modules
 packages
 bin
 obj
+*.mdf
+*.ldf
