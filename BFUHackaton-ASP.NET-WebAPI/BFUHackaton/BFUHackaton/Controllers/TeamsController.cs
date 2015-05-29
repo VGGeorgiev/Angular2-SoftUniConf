@@ -101,26 +101,5 @@
 
             return this.BadRequest();
         }
-
-        public IHttpActionResult AddUserToTeam(AddUserToTeamBindingModel model)
-        {
-            if (model != null && this.ModelState.IsValid)
-            {
-                var team = this.data.Teams.Find(model.TeamId);
-                if (team != null)
-                {
-                    var user = this.data.Users.FirstOrDefault(x => x.UserName == model.Username);
-                    if (user != null)
-                    {
-                        team.Users.Add(user);
-                        this.data.SaveChanges();
-
-                        return this.Ok();
-                    }
-                }
-            }
-            
-            return this.BadRequest(this.ModelState);
-        }
     }
 }
