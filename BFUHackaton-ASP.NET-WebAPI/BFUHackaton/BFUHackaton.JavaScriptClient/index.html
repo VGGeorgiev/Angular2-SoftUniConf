@@ -4,8 +4,19 @@
     <title></title>
 </head>
 <body>
+    <div id="teams"></div>
 
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/q.js/0.9.2/q.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/q.js/0.9.2/q.js"></script>
+    <script src="requester-callbacks.js"></script>
+    <script src="requester-promises.js"></script>
+    <script>
+        requester.get("http://localhost:32427/api/teams", {
+             Authorization: "Bearer AzmgklFep8EzHdNNaimMO0YCPEB7fY0FStA9DCaJL_tmE2ztHu84uwD0mvoIVFvaieueAGh87QZzW1VFivBxkrrHONdsd5DFp5HLlgREMDn4l9L3TtG42i4TcS-XT9IFvH7wAbTvEu2oXsU4aaIKgJhWS81wJQdRuAUQrF1oNbms_dzkViwJjEdMjJ66Oaothu0g0TcybG0gZrotC9bauqMUifV6Bap3fN9Wixx85qOixOB_yHxqcI6YZlD7nfJwIuwWXxBKudzAS93ez8QJtSuOOTE-q-V8xsA2U4Mh-TF7HJxIhLwRaAABDSpH-Aukn12EJ1nL-WpxWJZVODgIl7yaF9tBjUD1ciadPZPjMVB1-TrwseZWeNRGZm45ND6sM4BHndMHfcFx8dAXZTuBXHkdeHYXEWHGxW7CCaB9NGU2ZiataNMdRf6Pil3GrATmWCId1vUM8kZw2-aakoGOxzEjAlxHJ7VTLmLnAwXCMpWoIyqZTQSPOerN8cuGdLBK"
+        })
+        .then(function(data) {
+            $("#teams").html(data);
+        })
+    </script>
 </body>
 </html>

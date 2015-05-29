@@ -19,22 +19,26 @@
             this.client = new HttpClient();
         }
 
-        public async Task<T> Make<T>(HttpMethod method, string serviceUrl, object data = null, string mediaType = MediaType)
+        public async Task<T> Make<T>(HttpMethod method, string serviceUrl, string bearer, object data = null, string mediaType = MediaType)
         {
-            var request = this.GetRequestMessage(serviceUrl, method, data, mediaType);
+            var request = this.GetRequestMessage(serviceUrl, method, bearer, data, mediaType);
             var response = await this.client.SendAsync(request);
             var content = await response.Content.ReadAsStringAsync();
 
             return JsonConvert.DeserializeObject<T>(content);
         }
 
-        private HttpRequestMessage GetRequestMessage(string uri, HttpMethod method, object data, string mediaType)
+        private HttpRequestMessage GetRequestMessage(string uri, HttpMethod method, string bearer, object data, string mediaType)
         {
             var request = new HttpRequestMessage
             {
                 RequestUri = new Uri(this.baseUrl + uri),
                 Method = method,
-                Headers = { Accept = { new MediaTypeWithQualityHeaderValue(mediaType) } },
+                Headers =
+                {
+                    Accept = { new MediaTypeWithQualityHeaderValue(mediaType) },
+                    Authorization = new AuthenticationHeaderValue("Bearer", bearer)
+                },
             };
 
             if (data != null)
