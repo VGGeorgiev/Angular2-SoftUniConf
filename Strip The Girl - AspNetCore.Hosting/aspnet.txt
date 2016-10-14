@@ -1,0 +1,98 @@
+Projects
+	Mvc
+	Common
+	KestrelHttpServer
+	HttpAbstractions
+	Static Files
+	Routing
+	Hosting
+	Dependency Injection
+	
+	Entity Framework
+	Identity
+	
+https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-Live-Redmond-2016/TH17
+https://www.youtube.com/watch?v=GafJJ32lKyk
+
+Kestrel - Is the thing that accepts a http request from the network, turns into httpcontext, parses it through the application middleware pipeline. Knows how to bind to a port and listen for network traffic and translate this traffic to something that the rest of the stack can listen to.
+
+WebListener - Same as Kestrel, but Windows only (WebListener will be removed when Kestrel can do everything that WL can)
+
+1. Hosting
+	- Why we need this?
+	- Configuration needed
+	- Kestrel
+2. Hosting Structure
+3. Debugging the code
+
+
+A host must implement the IWebHost interface, which exposes collections of features and services, and a Start method. The host is typically created using an instance of a WebHostBuilder, which builds and returns a WebHost instance.
+
+IWebHost - Collection of features and services and Start method.
+WebHostBuilder - Builds and returns a WebHost instance.
+ApplicationBuilderFactory
+StartUp
+	ConventionBasedStartup
+	DelegateStartup
+	StartupBase
+	StartupExceptionPage
+Internal
+	ApplicationLifetime
+	AutoRequestServicesStartupFilter
+	ConfigureBuilder
+	ConfigureServicesBuilder
+	HostingApplication
+	HostingEnvironment
+	RequestServicesContainerMiddleware
+	RequestServicesFeature
+	StartupLoader
+	StartupMethods
+	WebHost
+	WebHostOptions
+
+WebHostExtenssions
+WebHostBuilderExtenssions - show
+
+Plan for the demo:
+	1. Configurations
+		UseStartUp
+			WebHostBuilderExtenssions
+				show all startup methods
+					ConventionBasedStartup : IStartUp
+						StartUpLoader
+						StartupMethods
+						ConfigureBuilder
+						ConfigureServicesBuilder
+				show Configure
+	2. WebHostBuilder methods
+		ctor
+			HostingEnvironment
+			WebHostOptions
+		ConfigureServices
+		ConfigureLogging
+		UseLoggerFactory
+		UseSettings, GetSettings
+	3. WebHostBuilder Build
+		BuildHostingServices
+			WebHostOptions
+			HostingEnvironment - Initialize
+			ApplicationBuilderFactory
+			AutoRequestServicesStartupFilter
+				RequestServicesContainerMiddleware
+					RequestServicesFeature
+			StartupLoader
+	4. WebHost
+		ctor
+			ApplicationLifetime
+		Run
+			ApplicationLifetime
+		Start
+			Initialize -> BuildApplication
+
+
+
+
+.NET Runtime (CoreCLR)
+.NET Core Libraries (CoreFX)
+.NET Core SDK (CLI, Roslyn)
+dotnet driver/app host
