@@ -12,3 +12,15 @@
 	HostingAbstractionsWebHostBuilderExtensions
 4. Configure / ConfigureServices
 	5. IStartup
+	
+	
+Debugged files
+	WebHost
+	EnvironmentName
+	HostingAbstractionsWebHostBuilderExtensions
+	WebHostBuilder
+	WebHostBuilderExtensions
+	WebHostDefaults
+	WebHostExtensions
+	IServer
+	
