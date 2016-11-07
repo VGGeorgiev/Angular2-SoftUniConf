@@ -1,17 +1,19 @@
-1. Empty web app
-	1. Start with IIS (default)
-	2. Start without IIS (remove UseIISIntegration)
-	3. Explain UseContentRoot / UseWebRoot
-	4. Explain UseEnvironment
-	5. Explain UseStartUp
-	6. Look throw the settings implementation.
-2. Build and Run - fast look
-3. Explain Structure - presentation
-4. WebHostBuilder
-5. WebHostBuilderExtensions
+1. Empty web app - with StartUp
+2. Empty web app - with Configure
+3. WebHostBuilderExtensions
 	HostingAbstractionsWebHostBuilderExtensions
-4. Configure / ConfigureServices
-	5. IStartup
+3. Build and Run - fast look
+4. Explain Structure - presentation
+5. IStartup
+	UseStartup
+	Configure
+6. WebHostBuilder
+7. WebHost
+ConfigureBuilder, ConfigureServicesBuilder - pattern?
+StartupMethods, StartupLoader
+
+HostingApplication
+RequestServicesContainerMiddleware
 	
 	
 Debugged files
