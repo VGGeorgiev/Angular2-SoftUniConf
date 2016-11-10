@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CF54B5D0-4DA2-45E7-949F-71B6E79069D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5975F049-0435-4ACA-B795-46391BD62FA4}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCore.Hosting.Demos", "src\AspNetCore.Hosting.Demos\AspNetCore.Hosting.Demos.xproj", "{E69287E7-F12F-42D2-8FE3-A3D45636FB5D}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Hosting", "..\..\..\aspnet\Hosting\src\Microsoft.AspNetCore.Hosting\Microsoft.AspNetCore.Hosting.xproj", "{3944F036-7E75-47E8-AA52-C4B89A64EC3A}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Hosting.Abstractions", "..\..\..\aspnet\Hosting\src\Microsoft.AspNetCore.Hosting.Abstractions\Microsoft.AspNetCore.Hosting.Abstractions.xproj", "{BB780FBB-7842-4759-8DE7-96FA2E5571C1}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Hosting.Server.Abstractions", "..\..\..\aspnet\Hosting\src\Microsoft.AspNetCore.Hosting.Server.Abstractions\Microsoft.AspNetCore.Hosting.Server.Abstractions.xproj", "{FDBBA081-5248-4FC0-9E08-B46BEF3FA438}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Microsoft.AspNetCore.Server.Kestrel", "..\..\..\aspnet\KestrelHttpServer\src\Microsoft.AspNetCore.Server.Kestrel\Microsoft.AspNetCore.Server.Kestrel.xproj", "{F510611A-3BEE-4B88-A613-5F4A74ED82A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E69287E7-F12F-42D2-8FE3-A3D45636FB5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69287E7-F12F-42D2-8FE3-A3D45636FB5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69287E7-F12F-42D2-8FE3-A3D45636FB5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69287E7-F12F-42D2-8FE3-A3D45636FB5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3944F036-7E75-47E8-AA52-C4B89A64EC3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3944F036-7E75-47E8-AA52-C4B89A64EC3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3944F036-7E75-47E8-AA52-C4B89A64EC3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3944F036-7E75-47E8-AA52-C4B89A64EC3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB780FBB-7842-4759-8DE7-96FA2E5571C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB780FBB-7842-4759-8DE7-96FA2E5571C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB780FBB-7842-4759-8DE7-96FA2E5571C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB780FBB-7842-4759-8DE7-96FA2E5571C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDBBA081-5248-4FC0-9E08-B46BEF3FA438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDBBA081-5248-4FC0-9E08-B46BEF3FA438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDBBA081-5248-4FC0-9E08-B46BEF3FA438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDBBA081-5248-4FC0-9E08-B46BEF3FA438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F510611A-3BEE-4B88-A613-5F4A74ED82A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F510611A-3BEE-4B88-A613-5F4A74ED82A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F510611A-3BEE-4B88-A613-5F4A74ED82A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F510611A-3BEE-4B88-A613-5F4A74ED82A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E69287E7-F12F-42D2-8FE3-A3D45636FB5D} = {CF54B5D0-4DA2-45E7-949F-71B6E79069D1}
+	EndGlobalSection
+EndGlobal

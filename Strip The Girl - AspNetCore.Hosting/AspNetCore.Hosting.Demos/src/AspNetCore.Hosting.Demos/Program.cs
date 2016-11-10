@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Hosting.Demos.Setup
+namespace AspNetCore.Hosting.Demos
 {
     public class Program
     {
@@ -13,6 +13,8 @@ namespace Hosting.Demos.Setup
         {
             var host = new WebHostBuilder()
                 .UseKestrel()
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
 

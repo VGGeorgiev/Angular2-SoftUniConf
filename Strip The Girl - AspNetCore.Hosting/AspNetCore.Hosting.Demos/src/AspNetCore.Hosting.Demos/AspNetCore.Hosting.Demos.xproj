@@ -7,8 +7,8 @@
 
   <Import Project="$(VSToolsPath)\DotNet\Microsoft.DotNet.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>ad3d4c7e-8fd8-4fc7-b267-6ce28e488c4f</ProjectGuid>
-    <RootNamespace>Hosting.Demos.Setup</RootNamespace>
+    <ProjectGuid>e69287e7-f12f-42d2-8fe3-a3d45636fb5d</ProjectGuid>
+    <RootNamespace>AspNetCore.Hosting.Demos</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">.\obj</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">.\bin\</OutputPath>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>

@@ -1,0 +1,6 @@
+﻿{
+  "projects": [ "src", "test", "C:\\Dev\\aspnet\\Hosting\\src", "C:\\Dev\\aspnet\\KestrelHttpServer\\src" /*, "C:\\Dev\\aspnet\\HttpAbstractions\\src"*/ ],
+  "sdk": {
+    "version": "1.0.0-preview2-003131"
+  }
+}
