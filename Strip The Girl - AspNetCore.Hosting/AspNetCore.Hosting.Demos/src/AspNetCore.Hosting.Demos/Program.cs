@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
+﻿using Microsoft.AspNetCore.Hosting;
 
 namespace AspNetCore.Hosting.Demos
 {
@@ -11,10 +6,9 @@ namespace AspNetCore.Hosting.Demos
     {
         public static void Main(string[] args)
         {
+            // 1. Empty web app - with StartUp
             var host = new WebHostBuilder()
                 .UseKestrel()
-                .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
 
@@ -22,3 +16,35 @@ namespace AspNetCore.Hosting.Demos
         }
     }
 }
+
+
+
+
+
+
+
+
+
+// 1.
+//.UseStartup(Assembly.GetEntryAssembly().FullName)
+
+// 2. Empty web app - with Configure
+//var host = new WebHostBuilder()
+//    .UseKestrel()
+//    .Configure(app =>
+//    {
+//        app.Run(async (context) =>
+//        {
+//            await context.Response.WriteAsync("Hello Word Configure!");
+//        });
+//    })
+//    .Build();
+
+// 3. Extensions
+//var host = new WebHostBuilder()
+//    .UseUrls("http://localhost:2323")
+//    .UseIISIntegration()
+//    .UseEnvironment("development")
+//    .UseKestrel()
+//    .UseStartup<Startup>()
+//    .Build();
