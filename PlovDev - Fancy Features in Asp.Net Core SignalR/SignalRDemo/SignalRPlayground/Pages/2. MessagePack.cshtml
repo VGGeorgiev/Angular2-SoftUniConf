@@ -1,0 +1,29 @@
+﻿@page
+<div class="container">
+    <div class="row">
+        <h2>SignalR MessagePack</h2>
+        <label for="user">User..........</label>
+        <input type="text" id="userInput" name="user" />
+        <br />
+        <label for="message">Message...</label>
+        <input type="text" id="messageInput" name="message" />
+
+        <input type="button" id="sendButton" value="Send Message" />
+    </div>
+    <div class="row">
+        <h3>Messages</h3>
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+<script src="~/lib/@@aspnet/signalr/dist/browser/signalr.js"></script>
+<script src="~/lib/msgpack5.js"></script>
+<script src="~/lib/signalr-protocol-msgpack.js"></script>
+
+<script src="~/js/2.chat-messagepack.js"></script>
+<!--
+1. Add Microsoft.AspNetCore.SignalR.Protocols.MessagePack
+2. Add .AddMessagePackProtocol() in SignalR service configuration
+3. Add msgpack5.js
+4. Add signalr-protocol-msgpack.js
+5. Add in client conf: .withHubProtocol(new signalR.protocols.msgpack.MessagePackHubProtocol())
+-->

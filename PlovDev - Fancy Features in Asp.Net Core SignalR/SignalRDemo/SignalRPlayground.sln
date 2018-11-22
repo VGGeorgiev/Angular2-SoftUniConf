@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRPlayground", "SignalRPlayground\SignalRPlayground.csproj", "{FCB833D3-B2C8-4F34-9937-DA1253594CAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRAuth", "SignalRAuth\SignalRAuth.csproj", "{D961100A-4DBF-4182-9D3E-8340D0188042}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCB833D3-B2C8-4F34-9937-DA1253594CAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCB833D3-B2C8-4F34-9937-DA1253594CAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCB833D3-B2C8-4F34-9937-DA1253594CAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCB833D3-B2C8-4F34-9937-DA1253594CAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D961100A-4DBF-4182-9D3E-8340D0188042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D961100A-4DBF-4182-9D3E-8340D0188042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D961100A-4DBF-4182-9D3E-8340D0188042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D961100A-4DBF-4182-9D3E-8340D0188042}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFC8FD3B-93F2-4698-AC6A-E4B634C49580}
+	EndGlobalSection
+EndGlobal

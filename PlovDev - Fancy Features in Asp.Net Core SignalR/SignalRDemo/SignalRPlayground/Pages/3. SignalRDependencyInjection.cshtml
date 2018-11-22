@@ -1,0 +1,20 @@
+﻿@page
+<div class="container">
+    <div class="row">
+        <h2>SignalR HubContext Injection</h2>
+        <label for="user">User..........</label>
+        <input type="text" id="userInput" name="user" />
+        <br />
+        <label for="message">Message...</label>
+        <input type="text" id="messageInput" name="message" />
+
+        <input type="button" id="sendButton" value="Send Message" />
+    </div>
+    <div class="row">
+        <button id="callControllerBtn">Call Controller</button>
+        <h3>Messages</h3>
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+<script src="~/lib/@@aspnet/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/3.chat-dependency-injection.js"></script>
