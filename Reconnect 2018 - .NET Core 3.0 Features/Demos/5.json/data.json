@@ -1,0 +1,17 @@
+[{
+  "id": 1,
+  "first_name": "Jeanette",
+  "last_name": "Penddreth",
+  "years": 29,
+  "kids": [{ "id": 5, "first_name": "Jany", "last_name": "Pend" }],
+  "ip_address": "26.58.193.2",
+  "car": { "manufaturer": "Lada", "Model": "Samara" }
+}, {
+  "id": 2,
+  "first_name": "Giavani",
+  "last_name": "Frediani",
+  "years": 19,
+  "kids": [],
+  "ip_address": "229.179.4.212",
+  "car": { }
+}]
